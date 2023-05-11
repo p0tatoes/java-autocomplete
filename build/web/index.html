@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>My AJAX App</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript" src="javascript.js" defer="defer"></script>
+        <link rel="stylesheet" href="stylesheet.css"/>
+    </head>
+    <body onload="init()">
+        <div class="form-container">
+            <form name="autofillform" action="autocomplete">
+                <table border="0" cellpadding="5">
+                    <thead>
+                        <tr>
+                            <th>
+                                <strong>Composer Name:</strong>
+                            </th>
+                            <th>
+                                <input type="text" name="complete-field" id="complete-field" size="40" onkeyup="showCompletion()" />
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td id="auto-row" colspan="2">
+                                <table id="complete-table" class="popupBox"></table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </form
+        </div>
+    </body>
+</html>
